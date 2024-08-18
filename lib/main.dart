@@ -1,8 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:hive/hive.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 import 'package:weather/cubits/git_weather_cubit/git_weather_cubit.dart';
 import 'package:weather/views/home_view.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+
+  // init the hive
+  await Hive.initFlutter();
+
+  // open a box
+  var box = await Hive.openBox('mybox');
+
   runApp(const MyApp());
 }
 

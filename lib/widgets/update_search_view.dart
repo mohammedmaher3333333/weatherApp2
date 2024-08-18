@@ -28,9 +28,9 @@ class UpdateSearchView extends StatelessWidget {
                 weatherModel.cityName,
                 style: const TextStyle(fontSize: 18),
               ),
-              const Icon(
-                Icons.keyboard_arrow_down,
-                size: 32,
+              IconButton(
+                onPressed: () {},
+                icon: const Icon(Icons.keyboard_arrow_down, size: 32),
               ),
             ],
           ),

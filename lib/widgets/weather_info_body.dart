@@ -31,7 +31,7 @@ class WeatherInfoBody extends StatelessWidget {
         ),
         child: Padding(
           padding: const EdgeInsets.only(
-              right: 16.0, left: 16.0,top: 32, bottom: 12),
+              right: 16.0, left: 16.0,top: 25, bottom: 12),
           child: Column(
             children: [
               UpdateSearchView(weatherModel: weatherModel),
